@@ -1,1 +1,2 @@
 ﻿1. Интегрировать добавление актуального GLAD для сборки OpenGL-части проекта в CMAKE (ссылка на референс: https://github.com/cmmw/imgui-glfw-glad-glm/blob/master/CMakeLists.txt)
+2. Понять, как лучше использовать пути к шейдерам и прочему.
