@@ -1,7 +1,7 @@
 ﻿// GeneralizedGraphicsRenderer.cpp : Defines the entry point for the application.
 //
 
-#include <glad/glad.h>
+#include <glad.h>
 #include "GeneralizedGraphicsRenderer.h"
 //#include "KHR/khrplatform.h"
 
