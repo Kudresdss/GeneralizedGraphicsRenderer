@@ -6,6 +6,18 @@ include(FetchContent)
 find_package(OpenGL REQUIRED)
 
 ##################################################
+##### GLAD
+
+set(GLAD_LIB glad)
+set(GLAD_DIR ${DEPENDENCIES_DIR}/glad)
+
+add_library(${GLAD_LIB} STATIC)
+
+target_sources(${GLAD_LIB} PRIVATE ${GLAD_DIR}/src/glad.c)
+
+target_include_directories(${GLAD_LIB} PUBLIC ${GLAD_DIR}/include)
+
+##################################################
 ##### GLFW
 FetchContent_Declare(
 	glfw

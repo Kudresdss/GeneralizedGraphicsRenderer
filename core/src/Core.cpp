@@ -1,8 +1,5 @@
-﻿// GeneralizedGraphicsRenderer.cpp : Defines the entry point for the application.
-//
-
-#include <glad.h>
-#include "GeneralizedGraphicsRenderer.h"
+﻿#include "glad/glad.h"
+#include "Core.h"
 //#include "KHR/khrplatform.h"
 
 #include <GLFW/glfw3.h>
@@ -18,7 +15,7 @@ unsigned int compileShader(unsigned int type, const std::string& source);
 
 std::string readFile(const std::string fileName);
 
-int main()
+int render()
 {
     GLFWwindow* window;
 

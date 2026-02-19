@@ -24,14 +24,14 @@ set(GLAD_DIR ${DEPENDENCIES_DIR}/glad)
 ##################################################
 
 # Add source to this project's executable.
-add_executable (${PROJECT_NAME} "src/GeneralizedGraphicsRenderer.cpp" "src/GeneralizedGraphicsRenderer.h" ${GLAD_DIR}/src/glad.c)
-
-
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL glfw)
-target_include_directories(${PROJECT_NAME} PRIVATE ${DEPENDENCIES_DIR} ${GLAD_DIR}/include)
+# add_executable(${PROJECT_NAME} "src/GeneralizedGraphicsRenderer.cpp" "src/GeneralizedGraphicsRenderer.h" ${GLAD_DIR}/src/glad.c)
+# 
+# 
+# target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL glfw)
+# target_include_directories(${PROJECT_NAME} PRIVATE ${DEPENDENCIES_DIR} ${GLAD_DIR}/include)
 
 
 
 # Program components
-# add_subdirectory(app)
-# add_subdirectory(core)
+add_subdirectory(app)
+add_subdirectory(core)
