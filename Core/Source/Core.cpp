@@ -7,6 +7,9 @@
 #include <fstream>
 #include <sstream>
 
+
+namespace GGR {
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
@@ -15,7 +18,7 @@ unsigned int compileShader(unsigned int type, const std::string& source);
 
 std::string readFile(const std::string fileName);
 
-int render()
+int GGR::render()
 {
     GLFWwindow* window;
 
@@ -174,3 +177,6 @@ std::string readFile(const std::string filePath)
 
     return content.str();
 }
+
+
+}  // namespace GGR

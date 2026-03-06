@@ -1,12 +1,12 @@
 include(FetchContent)
 
 ##################################################
-##### OpenGL
+##### OpenGL on device
 
 find_package(OpenGL REQUIRED)
 
 ##################################################
-##### GLAD
+##### GLAD static lib from local sources
 
 set(GLAD_LIB glad)
 set(GLAD_DIR ${DEPENDENCIES_DIR}/glad)
@@ -18,7 +18,8 @@ target_sources(${GLAD_LIB} PRIVATE ${GLAD_DIR}/src/glad.c)
 target_include_directories(${GLAD_LIB} PUBLIC ${GLAD_DIR}/include)
 
 ##################################################
-##### GLFW
+##### GLFW static lib fetched from github
+
 FetchContent_Declare(
 	glfw
 	GIT_REPOSITORY https://github.com/glfw/glfw.git

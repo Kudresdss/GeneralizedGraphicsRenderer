@@ -2,7 +2,7 @@
 
 int main()
 {
-	render();
+	GGR::render();
 
 
 	return 0;
